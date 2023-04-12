@@ -1,0 +1,78 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    background-color: black;
+}
+
+
+#container {
+    width: 100%;
+    height: auto;
+    background:  hsl(230, 17%, 14%);
+}
+
+#container .head{
+    background:  hsl(232, 19%, 15%);
+}
+
+
+/* BTN DARK LIGHT */
+
+.checkbox {
+    position: relative;
+    margin: 0px auto;
+    width: 50px;
+    height: 25px;
+    background-image : linear-gradient( to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 50px;
+    border: 1px solid #d2d2d2;
+}
+
+/* .checkbox:hover {
+    background-color: #d2d2d2;
+} */
+
+.btn-checkbox {
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    border-radius: 50px;
+    cursor: pointer;
+    z-index: 10;
+    opacity: 0;
+}
+
+.btn-check {
+    position: absolute;
+    width: 49px;
+    height: 24px;
+    background-image : linear-gradient( to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    border-radius: 50px;
+    border: 1px solid #d2d2d2;
+    opacity: 0;
+}
+
+.btn-checkbox:checked~.btn-check {
+    opacity: 1;
+}
+
+.ball-check {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: hsl(228, 28%, 20%);
+    top: 2px;
+    left: 3px;
+    box-shadow: 1px 1px #d2d2d2;
+    transition: 0.3s;
+}
+
+.btn-checkbox:checked~.ball-check {
+    left: 26px;
+
+}
