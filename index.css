@@ -5,29 +5,117 @@
 
 body {
     font-family: 'Manrope', sans-serif;
-    background-color: black;
+    /* background-color: black; */
+    background: hsl(230, 17%, 14%);
+    box-sizing: border-box;
+
 }
 
+header {
+    max-width: 1440px;
+    margin: auto;
+    position: relative;
+}
 
 #container {
     width: 100%;
     height: auto;
-    background:  hsl(230, 17%, 14%);
+    background: hsl(230, 17%, 14%);
+    position: relative;
+
 }
 
-#container .head{
-    background:  hsl(232, 19%, 15%);
+#container .head {
+    /* z-index: ; */
+    position: absolute;
+    background: hsl(232, 19%, 15%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+
 }
+
+#container .head .dashboard {
+    padding: 0 100px;
+    flex-basis: 50%;
+    color: white;
+}
+
+#container .head .checkbox {}
+
+#container .head .total-followers {
+    flex-basis: 100%;
+    position: relative;
+    top: -70px;
+    padding: 0 100px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 900;
+    /* left: 0; */
+}
+
+
+
+#container .main-stats{
+    position: absolute;
+    display: flex ;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#container .main-stats .reseaux{
+    display: flex;
+    /* height: 10em; */
+}
+
+#container .main-stats .up-down{
+    display: flex;
+    align-items: center;
+}
+
+
+
+
+
+
+#container .main-stats .fb{
+    background: hsl(228, 28%, 20%);
+    flex-basis: 22%;
+}
+#container .main-stats .tw{
+    background: hsl(228, 28%, 20%);
+    flex-basis: 22%;
+
+}
+#container .main-stats .ig{
+    background: hsl(228, 28%, 20%);
+    flex-basis: 22%;
+
+}
+#container .main-stats .yt{
+    background: hsl(228, 28%, 20%);
+    flex-basis: 22%;
+
+}
+
+
 
 
 /* BTN DARK LIGHT */
 
 .checkbox {
+
+    /* flex-basis: 50%; */
     position: relative;
-    margin: 0px auto;
+    right: 100px;
+    /* margin: 0px auto; */
     width: 50px;
     height: 25px;
-    background-image : linear-gradient( to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 50px;
     border: 1px solid #d2d2d2;
 }
@@ -50,7 +138,7 @@ body {
     position: absolute;
     width: 49px;
     height: 24px;
-    background-image : linear-gradient( to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+    background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 50px;
     border: 1px solid #d2d2d2;
     opacity: 0;
