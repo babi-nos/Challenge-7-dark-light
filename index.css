@@ -4,11 +4,12 @@
 }
 
 body {
-    font-family: 'Manrope', sans-serif;
     /* background-color: black; */
     background: hsl(230, 17%, 14%);
     box-sizing: border-box;
-
+    font-family: 'Manrope', sans-serif;
+    height: 100vh;
+    
 }
 
 header {
@@ -33,7 +34,7 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 200px;
+    height: 250px;
     width: 100%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -45,8 +46,6 @@ header {
     flex-basis: 50%;
     color: white;
 }
-
-#container .head .checkbox {}
 
 #container .head .total-followers {
     flex-basis: 100%;
@@ -60,47 +59,145 @@ header {
 
 
 
+
+
 #container .main-stats{
     position: absolute;
     display: flex ;
     width: 100%;
-    justify-content: space-between;
+    justify-content:center;
+    top: 125px;
+}
+
+#container .main-stats .box{
+    background: hsl(228, 28%, 20%);
+    flex-basis: 20%;
+    margin: 14.5px;
+    border-radius: 5px; 
 }
 
 #container .main-stats .reseaux{
     display: flex;
-    /* height: 10em; */
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    padding:  25px 0px ;
+    /* margin: 0 90px; */
+    color: hsl(228, 34%, 66%);
+    font-weight: bolder;
+    font-size: 0.79em;
+}
+#container .main-stats .name-reseaux{
+    margin-left: 7px;
+}
+
+#container .main-stats .number{
+    text-align: center;
+    padding:  0px 10px ;
+    color: white;
+    font-size: 1.7em;
+}
+#container .main-stats .box .number .number-follow{
+    font-size: 0.39em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 400;
 }
 
 #container .main-stats .up-down{
     display: flex;
     align-items: center;
+    justify-content: center;
+    padding:  25px 10px ;
+    font-weight: bolder;
+    font-size: 0.75em;
+}
+#container .main-stats .up-down .today{
+    color: #1EB589;
+    padding: 5px 0;
+}
+#container .main-stats .up-down .today-bad{
+    color: #DC414C;
+    padding: 5px 0;
+
 }
 
+/*SECONDE STATES*/
 
+#container .seconde-stats{
+    position: relative;
+    top: 150px;
+}
+#container .seconde-stats .title-today{ 
+    position: absolute;
+    padding: 0 100px;
+    font-size: 1.8em;
+    /* padding: 0 6.7%; */
+    bottom: 30px;
+    color: white;
+}
+#container .seconde-stats .overview {
+    position: relative;
+    display: flex ;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content:center;
+    top: 325px;
+}
 
-
-
-
-#container .main-stats .fb{
+#container .seconde-stats .overview .today{
     background: hsl(228, 28%, 20%);
-    flex-basis: 22%;
+    flex-basis: 20%;
+    margin: 14.5px;
+    border-radius: 5px; 
 }
-#container .main-stats .tw{
-    background: hsl(228, 28%, 20%);
-    flex-basis: 22%;
+#container .seconde-stats .overview .today .reseaux-page,
+#container .seconde-stats .overview .today .chiffre{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 35px 0 35px;
+}
+
+#container .seconde-stats .overview .today .reseaux-page{
+    color: hsl(228, 34%, 66%);
+    font-weight: bolder;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+#container .seconde-stats .overview .today .chiffre{
+    
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+#container .seconde-stats .overview .today .chiffre h1{
+    font-size: 2.3em;
+}
+#container .seconde-stats .overview .today .chiffre .pourcentage{
+    position: relative;
+    bottom: -5px;
+    color: #1EB589;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+#container .seconde-stats .overview .today .chiffre .pourcentage2{
+    position: relative;
+    bottom: -5px;
+    color: #DC414C;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
 
 }
-#container .main-stats .ig{
-    background: hsl(228, 28%, 20%);
-    flex-basis: 22%;
 
-}
-#container .main-stats .yt{
-    background: hsl(228, 28%, 20%);
-    flex-basis: 22%;
 
-}
+
+
+
 
 
 
