@@ -4,12 +4,9 @@
 }
 
 body {
-    /* background-color: black; */
     background: hsl(230, 17%, 14%);
     box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
-    height: 100vh;
-    
 }
 
 header {
@@ -21,205 +18,50 @@ header {
 #container {
     width: 100%;
     height: auto;
-    background: hsl(230, 17%, 14%);
     position: relative;
-
 }
 
 #container .head {
-    /* z-index: ; */
-    position: absolute;
+    position: relative;
     background: hsl(232, 19%, 15%);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    height: 250px;
+    height: 220px;
     width: 100%;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
-
 }
 
 #container .head .dashboard {
-    padding: 0 100px;
+    padding: 0 0 70px 110px;
     flex-basis: 50%;
     color: white;
+    font-size: 1.8em;
 }
 
 #container .head .total-followers {
     flex-basis: 100%;
     position: relative;
-    top: -70px;
-    padding: 0 100px;
+    top: -120px;
+    padding: 0 110px;
     color: hsl(228, 34%, 66%);
+    font-size: 0.8em;
     font-weight: 900;
-    /* left: 0; */
 }
-
-
-
-
-
-#container .main-stats{
-    position: absolute;
-    display: flex ;
-    width: 100%;
-    justify-content:center;
-    top: 125px;
-}
-
-#container .main-stats .box{
-    background: hsl(228, 28%, 20%);
-    flex-basis: 20%;
-    margin: 14.5px;
-    border-radius: 5px; 
-}
-
-#container .main-stats .reseaux{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-basis: 50%;
-    padding:  25px 0px ;
-    /* margin: 0 90px; */
-    color: hsl(228, 34%, 66%);
-    font-weight: bolder;
-    font-size: 0.79em;
-}
-#container .main-stats .name-reseaux{
-    margin-left: 7px;
-}
-
-#container .main-stats .number{
-    text-align: center;
-    padding:  0px 10px ;
-    color: white;
-    font-size: 1.7em;
-}
-#container .main-stats .box .number .number-follow{
-    font-size: 0.39em;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    color: hsl(228, 34%, 66%);
-    font-weight: 400;
-}
-
-#container .main-stats .up-down{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding:  25px 10px ;
-    font-weight: bolder;
-    font-size: 0.75em;
-}
-#container .main-stats .up-down .today{
-    color: #1EB589;
-    padding: 5px 0;
-}
-#container .main-stats .up-down .today-bad{
-    color: #DC414C;
-    padding: 5px 0;
-
-}
-
-/*SECONDE STATES*/
-
-#container .seconde-stats{
-    position: relative;
-    top: 150px;
-}
-#container .seconde-stats .title-today{ 
-    position: absolute;
-    padding: 0 100px;
-    font-size: 1.8em;
-    /* padding: 0 6.7%; */
-    bottom: 30px;
-    color: white;
-}
-#container .seconde-stats .overview {
-    position: relative;
-    display: flex ;
-    flex-wrap: wrap;
-    width: 100%;
-    justify-content:center;
-    top: 325px;
-}
-
-#container .seconde-stats .overview .today{
-    background: hsl(228, 28%, 20%);
-    flex-basis: 20%;
-    margin: 14.5px;
-    border-radius: 5px; 
-}
-#container .seconde-stats .overview .today .reseaux-page,
-#container .seconde-stats .overview .today .chiffre{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 35px 0 35px;
-}
-
-#container .seconde-stats .overview .today .reseaux-page{
-    color: hsl(228, 34%, 66%);
-    font-weight: bolder;
-    margin: 20px 0;
-    font-size: 0.95em;
-}
-
-#container .seconde-stats .overview .today .chiffre{
-    
-    color: #ffffff;
-    font-weight: bolder;
-    margin: 20px 0;
-}
-#container .seconde-stats .overview .today .chiffre h1{
-    font-size: 2.3em;
-}
-#container .seconde-stats .overview .today .chiffre .pourcentage{
-    position: relative;
-    bottom: -5px;
-    color: #1EB589;
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-}
-#container .seconde-stats .overview .today .chiffre .pourcentage2{
-    position: relative;
-    bottom: -5px;
-    color: #DC414C;
-    display: flex;
-    align-items: center;
-    font-size: 0.9em;
-
-}
-
-
-
-
-
-
-
-
-
 /* BTN DARK LIGHT */
 
 .checkbox {
-
-    /* flex-basis: 50%; */
     position: relative;
-    right: 100px;
-    /* margin: 0px auto; */
+    right: 115px;
+    top: -30px;
     width: 50px;
     height: 25px;
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 50px;
-    border: 1px solid #d2d2d2;
+    border: 1px solid #000000;
 }
-
-/* .checkbox:hover {
-    background-color: #d2d2d2;
-} */
 
 .btn-checkbox {
     position: absolute;
@@ -236,6 +78,7 @@ header {
     width: 49px;
     height: 24px;
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
+
     border-radius: 50px;
     border: 1px solid #d2d2d2;
     opacity: 0;
@@ -259,5 +102,206 @@ header {
 
 .btn-checkbox:checked~.ball-check {
     left: 26px;
+    background-color: white;
+}
+
+/*MAIN STATS*/
+
+#container .main-stats {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    top: 100px;
+}
+
+#container .main-stats .box {
+    background: hsl(228, 28%, 20%);
+    margin: 16px;
+    flex-basis: 19.5%;
+    border-radius: 5px;
+    position: relative;
+}
+
+#container .main-stats .box1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #178FF5;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container .main-stats .box2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background-color: #1DA1F2;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container .main-stats .box3::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background-image: linear-gradient(to right, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container .main-stats .box4::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 4px;
+    width: 100%;
+    background-color: hsl(348, 97%, 39%);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#container .main-stats .reseaux {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 50%;
+    padding: 25px 0px;
+    color: hsl(228, 34%, 66%);
+    font-weight: bolder;
+    font-size: 0.69em;
+}
+
+#container .main-stats .name-reseaux {
+    margin-left: 7px;
+}
+
+#container .main-stats .number {
+    text-align: center;
+    padding: 0px 10px;
+    color: white;
+    font-size: 1.55em;
+}
+
+#container .main-stats .box .number .number-follow {
+    font-size: 0.39em;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: hsl(228, 34%, 66%);
+    font-weight: 400;
+}
+
+#container .main-stats .up-down {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 10px;
+    font-weight: bolder;
+    font-size: 0.75em;
+}
+
+#container .main-stats .up-down .today {
+    color: #1EB589;
+    /* padding: 5px 0; */
+}
+
+#container .main-stats .up-down .today-bad {
+    color: #DC414C;
+    /* padding: 5px 0; */
 
 }
+
+/*SECONDE STATES*/
+
+#container .seconde-stats {
+    position: relative;
+    margin-top: 150px;
+}
+
+#container .seconde-stats .title-today {
+    position: relative;
+    padding: 0px 110px;
+    font-size: 1.7em;
+    color: white;
+}
+
+#container .seconde-stats .overview {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    /* top: 250px; */
+}
+
+#container .seconde-stats .overview .today {
+    background: hsl(228, 28%, 20%);
+    flex-basis: 19.5%;
+    margin: 16px;
+    border-radius: 5px;
+}
+
+#container .seconde-stats .overview .today .reseaux-page,
+#container .seconde-stats .overview .today .chiffre {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 35px 0 35px;
+}
+
+#container .seconde-stats .overview .today .reseaux-page {
+    color: hsl(228, 34%, 66%);
+    font-weight: bolder;
+    margin: 20px 0;
+    font-size: 0.95em;
+}
+
+#container .seconde-stats .overview .today .chiffre {
+
+    color: #ffffff;
+    font-weight: bolder;
+    margin: 20px 0;
+}
+
+#container .seconde-stats .overview .today .chiffre h1 {
+    font-size: 2.3em;
+}
+
+#container .seconde-stats .overview .today .chiffre .pourcentage {
+    position: relative;
+    bottom: -5px;
+    color: #1EB589;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+}
+
+#container .seconde-stats .overview .today .chiffre .pourcentage2 {
+    position: relative;
+    bottom: -5px;
+    color: #DC414C;
+    display: flex;
+    align-items: center;
+    font-size: 0.9em;
+
+}
+
+
