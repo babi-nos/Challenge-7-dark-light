@@ -1,3 +1,89 @@
+@media only screen and (max-width: 1100px) {
+    #container .head {
+        display: flex !important;
+        height: 150px !important;
+    }
+
+    #container .head .dashboard {
+        left: 4% !important;
+        padding: 0 0 0px 0px !important;
+        flex-basis: 100% !important;
+        font-size: 1.4em !important;
+    }
+
+    #container .head .total-followers {
+        left: 4% !important;
+        top: -50px !important;
+        font-size: 0.8em;
+    }
+
+    #container .head .checkbox {
+        position: absolute;
+        right: 5%;
+        top: 120px;
+    }
+
+    #container .main-stats .box {
+        flex-basis: 100% !important;
+    }
+
+    #container .main-stats {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        width: auto !important;
+        top: 0px !important;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #container .seconde-stats .overview {
+        position: relative !important;
+        display: flex !important;
+        flex-direction: column;
+        justify-content: center !important;
+        width: auto !important;
+        top: 0px !important;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    #container .seconde-stats .title-today {
+        left: 4% !important;
+    }
+
+    #container .divider {
+        position: absolute;
+        display: block;
+        height: 1px;
+        width: 92%;
+        background-color: hsl(228, 34%, 66%);
+        left: 50%;
+        transform: translate(-50%, 0%);
+        margin-top: 50px;
+    }
+
+    .mode-dark {
+        display: none;
+    }
+
+    .mode-darks {
+        display: flex !important;
+        position: absolute;
+        width: 135px;
+        left: 4%;
+        top: 120px;
+        color: white;
+        font-size: 0.9em;
+    }
+
+    #container .seconde-stats {
+        margin-top: 25px !important;
+    }
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +99,7 @@ header {
     max-width: 1440px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 
 #container {
@@ -35,7 +122,10 @@ header {
 }
 
 #container .head .dashboard {
-    padding: 0 0 70px 110px;
+    position: relative;
+    left: 7.7%;
+    top: 0px;
+    padding: 0 0 70px 0px;
     flex-basis: 50%;
     color: white;
     font-size: 1.8em;
@@ -44,33 +134,51 @@ header {
 #container .head .total-followers {
     flex-basis: 100%;
     position: relative;
+    left: 7.7%;
     top: -120px;
-    padding: 0 110px;
     color: hsl(228, 34%, 66%);
     font-size: 0.8em;
     font-weight: 900;
 }
+
+#conatiner .divider {
+    display: none;
+}
+
 /* BTN DARK LIGHT */
+
+.mode-darks {
+    display: none;
+}
 
 .checkbox {
     position: relative;
-    right: 115px;
+    right: 7.7%;
     top: -30px;
     width: 50px;
     height: 25px;
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
     border-radius: 50px;
-    border: 1px solid #000000;
 }
 
 .btn-checkbox {
     position: absolute;
-    width: 50px;
-    height: 25px;
+    width: 35px;
+    height: 10px;
+    left: 5px;
     border-radius: 50px;
     cursor: pointer;
     z-index: 10;
     opacity: 0;
+}
+
+.mode-dark {
+    position: absolute;
+    width: 135px;
+    right: 5px;
+    top: 5px;
+    color: white;
+    font-size: 0.9em;
 }
 
 .btn-check {
@@ -78,7 +186,6 @@ header {
     width: 49px;
     height: 24px;
     background-image: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-
     border-radius: 50px;
     border: 1px solid #d2d2d2;
     opacity: 0;
@@ -92,7 +199,7 @@ header {
     position: absolute;
     width: 20px;
     height: 20px;
-    border-radius: 50%;
+    border-radius: 50px;
     background: hsl(228, 28%, 20%);
     top: 2px;
     left: 3px;
@@ -196,7 +303,6 @@ header {
 
 #container .main-stats .number {
     text-align: center;
-    padding: 0px 10px;
     color: white;
     font-size: 1.55em;
 }
@@ -220,13 +326,10 @@ header {
 
 #container .main-stats .up-down .today {
     color: #1EB589;
-    /* padding: 5px 0; */
 }
 
 #container .main-stats .up-down .today-bad {
     color: #DC414C;
-    /* padding: 5px 0; */
-
 }
 
 /*SECONDE STATES*/
@@ -238,7 +341,7 @@ header {
 
 #container .seconde-stats .title-today {
     position: relative;
-    padding: 0px 110px;
+    left: 7.7%;
     font-size: 1.7em;
     color: white;
 }
@@ -249,7 +352,6 @@ header {
     flex-wrap: wrap;
     width: 100%;
     justify-content: center;
-    /* top: 250px; */
 }
 
 #container .seconde-stats .overview .today {
@@ -294,6 +396,15 @@ header {
     font-size: 0.9em;
 }
 
+#container .seconde-stats .overview .today .chiffre .pourcentage svg {
+    margin: 5px;
+}
+
+#container .seconde-stats .overview .today .chiffre .pourcentage2 svg {
+    margin: 5px;
+}
+
+
 #container .seconde-stats .overview .today .chiffre .pourcentage2 {
     position: relative;
     bottom: -5px;
@@ -301,7 +412,4 @@ header {
     display: flex;
     align-items: center;
     font-size: 0.9em;
-
 }
-
-

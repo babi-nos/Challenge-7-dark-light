@@ -6,10 +6,11 @@ const head = document.querySelector(".head");
 const titleDashbord = document.querySelector(".dashboard"); 
 const titleToday = document.querySelector(".title-today"); 
 const totalF = document.querySelector(".total-followers"); 
+const TileDarkMode = document.querySelector(".mode-dark"); 
+const TileDarkModeMobile = document.querySelector(".mode-darks"); 
 const titlePageView = document.querySelectorAll(".title"); 
 const nameOfReseaux = document.querySelectorAll(".name-reseaux"); 
 let toggleTheme = 0;
-
 
 
 checkbox.addEventListener('click', () => {
@@ -19,6 +20,8 @@ checkbox.addEventListener('click', () => {
         head.style.backgroundColor = "#F5F7FF"
         titleDashbord.style.color = "#000"
         titleToday.style.color = "#5E6377"
+        TileDarkMode.style.color = "#000"
+        TileDarkModeMobile.style.color = "#000"
         totalF.style.color = "#5E6377"
         
         nameOfReseaux.forEach(function(nameOfReseaux){
@@ -45,6 +48,10 @@ checkbox.addEventListener('click', () => {
         head.style.backgroundColor = "#1F212E"
         titleDashbord.style.color = "#fff"
         titleToday.style.color = "#fff"
+        TileDarkModeMobile.style.color = "#fff"
+
+        TileDarkMode.style.color = "#fff"
+
         totalF.style.color = "#8B97C6"
         
         nameOfReseaux.forEach(function(nameOfReseaux){
@@ -67,15 +74,6 @@ checkbox.addEventListener('click', () => {
     }
 });
 
-
-
-// other methode for black/light (give class css)
-// const checkbox = document.querySelector('.checkbox');
-// const body = document.querySelector('body');
-
-// checkbox.addEventListener('click', () => {
-//   body.classList.toggle('dark-theme');
-// });
 
 
 
